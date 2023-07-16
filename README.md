@@ -1,0 +1,3 @@
+The "Automated Abandoned Cart Messages via WhatsApp" project aims to automate the delivery of personalized messages to customers who have abandoned their shopping carts. Leveraging the popularity and convenience of WhatsApp, this project enables businesses to reconnect with potential customers and increase conversion rates.
+
+The system utilizes an Excel file containing customer contact numbers and the corresponding messages to be sent. The project automates the process of sending personalized messages to each customer, reminding them about their abandoned cart and encouraging them to complete their purchase.
