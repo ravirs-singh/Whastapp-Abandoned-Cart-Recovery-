@@ -55,7 +55,7 @@ def notif(t):
 .n .r{{display:flex;justify-content:space-between;font-size:24px;color:#7a7a7a}}
 .n .r b{{color:#111;font-weight:700;font-size:28px}}
 .n p{{font-size:29px;color:#111;margin-top:6px}}
-h1{{position:absolute;left:56px;right:56px;bottom:130px;text-align:center;font-family:var(--display);color:var(--ink);font-size:62px;line-height:1.02;letter-spacing:-.02em}}
+h1{{position:absolute;left:56px;right:56px;bottom:130px;text-align:center;font-family:var(--display);color:var(--ink);font-size:70px;line-height:1.02;letter-spacing:-.03em}}
 .foot{{position:absolute;left:56px;right:56px;bottom:52px;display:flex;justify-content:space-between;align-items:center}}
 .brand{{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-weight:700;font-size:23px;letter-spacing:.04em;color:var(--ink)}}
 .meta{{font-family:var(--mono);font-size:20px;letter-spacing:.16em;color:#5f574c}}
@@ -95,7 +95,7 @@ def split(t):
 .them{{background:#E4E0D6;color:#8A8377}}
 .us{{background:var(--accent);color:#fff}}
 .lbl{{font-family:var(--mono);font-size:24px;letter-spacing:.18em}}
-.q{{font-family:var(--display);font-size:54px;line-height:1.02}}
+.q{{font-family:var(--display);font-size:60px;line-height:1.02;letter-spacing:-.03em}}
 .them .q{{text-decoration:line-through;text-decoration-thickness:8px;text-decoration-color:var(--accent)}}
 ul{{list-style:none;font-family:var(--mono);font-size:22px;line-height:1.7}}
 .photo{{flex:1;min-height:0;overflow:hidden;position:relative;background:{t['bg']} url({t['img']}) 50% 38%/cover no-repeat}}

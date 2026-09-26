@@ -7,7 +7,7 @@
 :root{
   --cream:#EFEBE0; --surface:#FBF9F3; --ink:#1A1815; --muted:#8A8377;
   --line:#DED8C9; --accent:#C0522C; --accent-ink:#7E3417; --photo:#D9D3C8;
-  --mono:'Space Mono',ui-monospace,monospace; --display:'Archivo Black','Space Mono',sans-serif;
+  --mono:'Space Mono',ui-monospace,monospace; --display:'Bricolage','Archivo Black',sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{background:var(--cream);color:var(--ink);font-family:var(--mono);overflow:hidden}
@@ -32,3 +32,9 @@ html,body{background:var(--cream);color:var(--ink);font-family:var(--mono);overf
 @font-face{font-family:'Inter';font-weight:100 900;src:url(fonts/inter.woff2) format('woff2')}
 @font-face{font-family:'Marker';src:url(fonts/marker.woff2) format('woff2')}
 @font-face{font-family:'Anton';src:url(fonts/anton.woff2) format('woff2')}
+@font-face{font-family:'Bricolage';font-weight:800;src:url(fonts/bricolage.woff2) format('woff2')}
+@font-face{font-family:'CaveatBrush';src:url(fonts/caveat.woff2) format('woff2')}
+@font-face{font-family:'RubikMono';src:url(fonts/rubikmono.woff2) format('woff2')}
+@font-face{font-family:'Bowlby';src:url(fonts/bowlby.woff2) format('woff2')}
+@font-face{font-family:'Instrument';font-style:italic;src:url(fonts/instrument.woff2) format('woff2')}
+h1,.q{font-weight:800}

@@ -13,7 +13,7 @@ COPY = {
         dating=dict(prompt='My most irrational fear', answer='“Can we talk?” with no context.', headline='Swipe right on fear.'),
     ),
     'snorlax': dict(
-        chat=dict(who='Mom', them='beta gym gaya aaj?', me='on my way 🏃', headline='(He was not on his way.)'),
+        chat=dict(who='Mom', them='beta gym gaya aaj?', me='on my way 🏃', headline='(Spoiler: not on my way.)'),
         captcha=dict(label="I'm a morning person", headline='Verification failed.'),
         battery=dict(title='Motivation Low', body='2% remaining. Take a nap?', a='Later', b='Nap',
                      headline='Just do it later.'),
@@ -35,7 +35,7 @@ def frame(t, widget_css, widget_html, headline):
 .bg{{position:absolute;inset:0;background:url({t['img']}) 50% 100%/108% no-repeat}}
 .w{{position:absolute;left:150px;right:150px;top:70px;font-family:Inter,sans-serif}}
 {widget_css}
-h1{{position:absolute;left:56px;right:56px;bottom:130px;text-align:center;font-family:var(--display);color:var(--ink);font-size:62px;line-height:1.02;letter-spacing:-.02em}}
+h1{{position:absolute;left:56px;right:56px;bottom:130px;text-align:center;font-family:var(--display);color:var(--ink);font-size:70px;line-height:1.02;letter-spacing:-.03em}}
 .foot{{position:absolute;left:56px;right:56px;bottom:52px;display:flex;justify-content:space-between;align-items:center}}
 .brand{{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-weight:700;font-size:23px;letter-spacing:.04em;color:var(--ink)}}
 .meta{{font-family:var(--mono);font-size:20px;letter-spacing:.16em;color:#5f574c}}
