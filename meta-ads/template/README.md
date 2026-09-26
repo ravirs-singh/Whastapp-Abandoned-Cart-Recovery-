@@ -1,6 +1,6 @@
 # Brainsick ad templates
 
-Three approved 4:5 (1080×1350) Meta ad layouts: **notification**, **post** and **them-vs-us split**.
+4:5 (1080×1350) Meta ad layouts. `gen.py`: notification, post, them-vs-us split. `gen2.py`: lock screen, captcha, dating app, group chat (copy per tee in its `EXTRA`).
 
 ## Add a new tee
 1. Put the product photo (4:5, plain background) in this folder.
@@ -8,6 +8,6 @@ Three approved 4:5 (1080×1350) Meta ad layouts: **notification**, **post** and 
 3. Render:
    ```sh
    npm i playwright-core
-   node render.js $(python3 gen.py)
+   node render.js $(python3 gen.py) $(python3 gen2.py)
    ```
    PNGs are written next to the HTML files as `final-<tee>-<layout>.png`.
