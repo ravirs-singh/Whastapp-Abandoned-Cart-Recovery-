@@ -19,9 +19,9 @@ EXTRA = {
     ),
     'snorlax': dict(
         lock=dict(time='11:47', date='Saturday, 14 September', headline='Just do it later.', zoom=1.5, fy=0.30,
-                  notes=[('⏰', 'Alarm', '6:00', 'Gym (snoozed ×9)'),
-                         ('🏃', 'Fitness', '9:12', "You haven't moved in 47 days"),
-                         ('💬', 'Mom', '10:30', 'beta are you awake??'),
+                  notes=[('⏰', 'Alarm', '11:45', 'Gym (snoozed ×9)'),
+                         ('🏃', 'Fitness', '11:30', "You haven't moved in 47 days"),
+                         ('💬', 'Mom', '11:02', 'beta are you awake??'),
 ]),
         captcha="someone who's being productive",
         dating=dict(prompt='My love language', answer='Cancelling plans so we can both nap.'),
@@ -132,11 +132,12 @@ def dating(t, e):
 def chat(t, e):
     c = e['chat']
     out = []
-    for who, m in c['msgs']:
+    for i, (who, m) in enumerate(c['msgs']):
+        tm = f'2:{11 + i:02d}'
         if who == 'me':
-            out.append(f'<div class="me"><div class="img" style="{crop_bg(t, 1.15, fy=0.47, w=560, h=560)}"></div><p>{m}</p><span>2:14 &#10003;&#10003;</span></div>')
+            out.append(f'<div class="me"><div class="img" style="{crop_bg(t, 1.15, fy=0.47, w=560, h=560)}"></div><p>{m}</p><span>{tm} &#10003;&#10003;</span></div>')
         else:
-            out.append(f'<div class="them"><b>{who}</b><p>{m}</p><span>2:13</span></div>')
+            out.append(f'<div class="them"><b>{who}</b><p>{m}</p><span>{tm}</span></div>')
     return HEAD + f'''
 .ad{{width:1080px;height:1350px;background:#EDE6DB;font-family:Inter,sans-serif}}
 .hdr{{display:flex;align-items:center;gap:22px;background:#F7F4EE;padding:34px 40px;border-bottom:1px solid #ddd}}
